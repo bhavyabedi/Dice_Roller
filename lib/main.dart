@@ -5,7 +5,9 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: GradientContainerW(),
+        body: TlToBRGradient(
+          [Colors.amber, Colors.blue],
+        ),
       ),
     ),
   );
