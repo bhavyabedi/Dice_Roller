@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class HelloWorld extends StatelessWidget {
-  const HelloWorld({super.key});
+  const HelloWorld(this.txt, {super.key});
+  final String txt;
+
   @override
   Widget build(context) {
-    return const Center(
+    return Center(
       child: Text(
-        'Hello World!',
-        style: TextStyle(color: Colors.white, fontSize: 28.0),
+        txt,
+        style: const TextStyle(color: Colors.white, fontSize: 28.0),
       ),
     );
   }
